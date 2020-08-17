@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/dayna/.dotnet/store/|arch|/|tfm|",
+      "/Users/dayna/.nuget/packages"
+    ]
+  }
+}

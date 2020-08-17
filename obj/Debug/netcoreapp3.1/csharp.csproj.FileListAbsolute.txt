@@ -1,0 +1,12 @@
+/Users/dayna/Documents/IdeaProjects/csharp/bin/Debug/netcoreapp3.1/csharp.deps.json
+/Users/dayna/Documents/IdeaProjects/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.json
+/Users/dayna/Documents/IdeaProjects/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.dev.json
+/Users/dayna/Documents/IdeaProjects/csharp/bin/Debug/netcoreapp3.1/csharp.dll
+/Users/dayna/Documents/IdeaProjects/csharp/bin/Debug/netcoreapp3.1/csharp.pdb
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.csprojAssemblyReference.cache
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfoInputs.cache
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfo.cs
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.CoreCompileInputs.cache
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.dll
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.pdb
+/Users/dayna/Documents/IdeaProjects/csharp/obj/Debug/netcoreapp3.1/csharp.genruntimeconfig.cache
