@@ -9,10 +9,10 @@ namespace csharp
             // comments are written like this
             /* or like
             this */
-            // Console.WriteLine("\nWhat is your name? ");
-            var name = Console.ReadLine();
+            // Console.WriteLine("\nWhat is your strName? ");
+            var strName = Console.ReadLine();
             var date = DateTime.Now;
-            // Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
+            // Console.WriteLine($"\nHello, {strName}, on {date:d} at {date:t}!");
             // Console.Write("\nPress any key to exit...");
             // Console.ReadKey(true);
 
@@ -97,7 +97,68 @@ namespace csharp
             // Find the larger number between numberOne and numberTwo
             Console.WriteLine(Math.Max(numberOne, numberTwo));
 
-            
+            // First string variable
+            string firstSentence = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.";
+            // Second string variable
+            string firstSpeech = "My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\"";
+            // Print variable and newline
+            Console.WriteLine(firstSentence);
+            Console.WriteLine("\n");
+            Console.WriteLine(firstSpeech);
+
+            // Declare the variables
+            string beginning = "This is the beginning. ";
+            string middle = "This is the middle. ";
+            string end = "This is the end.";
+            // Concatenate the string and the variables
+            string story = beginning + middle + end;
+            // Print the story to the console 
+            Console.WriteLine(story);
+
+            // Declare the variables
+            string beginningInterpolated = "Once upon a time,";
+            string middleInterpolated = "The kid climbed a tree";
+            string endInterpolated = "Everyone lived happily ever after.";
+            // Interpolate the string and the variables
+            string storyInterpolated = $"{beginning} {middle} {end}";
+            // Print the story to the console 
+            Console.WriteLine(storyInterpolated);
+
+            // Create password
+            string password = "a92301j2add";
+            // Get password length
+            int passwordLength = password.Length;
+            // Check if password uses symbol
+            int passwordCheck = password.IndexOf("!");
+            // Print results
+            Console.WriteLine($"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
+
+            // User Name
+            string strName = "Farhad Hesam Abbasi";
+            // Get first letter
+            int charPosition = strName.IndexOf("F");
+            char firstLetter = strName[charPosition];
+            // Get last strName
+            charPosition = strName.IndexOf("Abbasi");
+            string lastName = strName.Substring(charPosition);
+            // Print results
+            Console.WriteLine($"{firstLetter}. {lastName}");
+
+            // Script line
+            string script = "Close on a portrait of the HANDSOME PRINCE -- as the BEAST'S giant paw slashes it.";
+            // Get camera directions
+            int charPosition = script.IndexOf("Close");
+            int length = "Close on".Length;
+            string cameraDirections = script.Substring(charPosition, length);
+            // Get scene description
+            charPosition = script.IndexOf("a portrait");
+            string sceneDescription = script.Substring(charPosition);
+            // Make camera directions uppercase
+            cameraDirections = cameraDirections.ToUpper();
+            // Make scene description lowercase
+            sceneDescription = sceneDescription.ToLower();
+            // Print results
+            Console.WriteLine($"{cameraDirections} {sceneDescription}");
         }
     }
 }
