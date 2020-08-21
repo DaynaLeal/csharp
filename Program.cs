@@ -79,12 +79,12 @@ namespace csharp
             Console.WriteLine(students % groupSize);
 
             // Starting variables 
-            int numberOne = 12932;
-            int numberTwo = -2828472;
+            int numOne = 12932;
+            int numTwo = -2828472;
             // Use built-in methods and save to variable 
-            double numberOneSqrt = Math.Floor(Math.Sqrt(numberOne));
+            double numberOneSqrt = Math.Floor(Math.Sqrt(numOne));
             // Use built-in methods and save to variable 
-            double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
+            double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numTwo)));
             // Print the lowest number
             Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
 
@@ -120,7 +120,7 @@ namespace csharp
             string middleInterpolated = "The kid climbed a tree";
             string endInterpolated = "Everyone lived happily ever after.";
             // Interpolate the string and the variables
-            string storyInterpolated = $"{beginning} {middle} {end}";
+            string storyInterpolated = $"{beginningInterpolated} {middleInterpolated} {endInterpolated}";
             // Print the story to the console 
             Console.WriteLine(storyInterpolated);
 
@@ -134,25 +134,25 @@ namespace csharp
             Console.WriteLine($"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
 
             // User Name
-            string strName = "Farhad Hesam Abbasi";
+            string fullName = "Farhad Hesam Abbasi";
             // Get first letter
-            int charPosition = strName.IndexOf("F");
-            char firstLetter = strName[charPosition];
+            int charPosition = fullName.IndexOf("F");
+            char firstLetter = fullName[charPosition];
             // Get last strName
-            charPosition = strName.IndexOf("Abbasi");
-            string lastName = strName.Substring(charPosition);
+            charPosition = fullName.IndexOf("Abbasi");
+            string lastName = fullName.Substring(charPosition);
             // Print results
             Console.WriteLine($"{firstLetter}. {lastName}");
 
             // Script line
             string script = "Close on a portrait of the HANDSOME PRINCE -- as the BEAST'S giant paw slashes it.";
             // Get camera directions
-            int charPosition = script.IndexOf("Close");
+            int position = script.IndexOf("Close");
             int length = "Close on".Length;
-            string cameraDirections = script.Substring(charPosition, length);
+            string cameraDirections = script.Substring(position, length);
             // Get scene description
-            charPosition = script.IndexOf("a portrait");
-            string sceneDescription = script.Substring(charPosition);
+            position = script.IndexOf("a portrait");
+            string sceneDescription = script.Substring(position);
             // Make camera directions uppercase
             cameraDirections = cameraDirections.ToUpper();
             // Make scene description lowercase
@@ -174,6 +174,65 @@ namespace csharp
             bool friendNeeds = beach || hiking;
             bool tripDecision = yourNeeds && friendNeeds;
             Console.WriteLine(tripDecision);
+
+            int socks = 6;
+            if (socks <= 3)
+            {
+              Console.WriteLine("Time to do laundry!");
+            }
+
+            int people = 12;
+            string weather = "bad";
+            if (people <= 10 && weather == "nice")
+            {
+              Console.WriteLine("SaladMart");
+            }
+            else
+            {
+              Console.WriteLine("Soup N Sandwich");
+            }
+
+            int guests = 0;
+            if(guests >= 4)
+            {
+              Console.WriteLine("Catan");
+            }
+            else if(guests >= 1)
+            {
+              Console.WriteLine("Innovation");
+            }
+            else 
+            {
+              Console.WriteLine("Solitaire");
+            }
+
+            Console.WriteLine("Type your favorite genre");
+            string genre = Console.ReadLine();
+            switch(genre)
+            {
+                case "Drama":
+                    Console.WriteLine("Citizen Kane");
+                    break;
+                case "Comedy":
+                    Console.WriteLine("Duck Soup");
+                    break;
+                case "Adventure":
+                    Console.WriteLine("King Kong");
+                    break;
+                case "Horror":
+                    Console.WriteLine("Psycho");
+                    break;
+                case "Science Fiction":
+                    Console.WriteLine("2001: A Space Oddysey");
+                    break;    
+                default:
+                    Console.WriteLine("No Movie Found");
+                    break;      
+            }
+
+            int pepperLength = 4;
+            string message = (pepperLength >= 3.5) ? "ready!" : "wait a little longer";
+            Console.WriteLine(message);
 
             
         }
