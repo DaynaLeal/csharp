@@ -234,7 +234,69 @@ namespace csharp
             string message = (pepperLength >= 3.5) ? "ready!" : "wait a little longer";
             Console.WriteLine(message);
 
-            
+            Math.Min(3, 5);
+            string msg = "Yabba dabba doo!";
+            Console.WriteLine(msg);
+            msg.Substring(0, 1);
+
+            string designer = "Anders Hejlsberg";
+            int indexOfSpace = designer.IndexOf(" ");
+            string secondName = designer.Substring(indexOfSpace);
+            Console.WriteLine(secondName);
+
+            VisitPlanets();
+
+            VisitPlanets(3);
+            VisitPlanets(7);
+            VisitPlanets(9);
+
+            VisitPlanets(numberOfPlanets: 2);
+            VisitPlanets(numberOfPlanets: 2, name: "Dayna");
+
+            NamePets("Laika", "Albert");
+            NamePets("Mango", "Puddy", "Bucket");
+            NamePets();
+
         }
+
+        //OUTSIDE OF MAIN METHOD STARTS HERE
+        // static void VisitPlanets()
+        // {
+        //   Console.WriteLine("You visited many new planets…");
+        // }
+
+        static void VisitPlanets(int numberOfPlanets = 5)
+        {
+          Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+        }
+
+        static void VisitPlanets(
+          string adjective = "brave",
+          string name = "Cosmonaut", 
+          int numberOfPlanets = 0,
+          double gForce = 4.2)
+        {
+          Console.WriteLine($"Welcome back, {adjective} {name}.");
+          Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+          Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
+        }
+
+        static void NamePets(string name1, string name2)
+        {
+          Console.WriteLine($"Your pets {name1} and {name2} will be joining your voyage across space!");
+        }
+
+        static void NamePets(string name1, string name2, string name3)
+        {
+          Console.WriteLine($"Your pets {name1}, {name2}, and {name3} will be joining your voyage across space!");
+        }
+
+        static void NamePets()
+        {
+          Console.WriteLine("Aw, you have no spacefaring pets");
+        }
+
+
+
     }
 }
