@@ -245,17 +245,33 @@ namespace csharp
             Console.WriteLine(secondName);
 
             VisitPlanets();
-
             VisitPlanets(3);
             VisitPlanets(7);
             VisitPlanets(9);
-
             VisitPlanets(numberOfPlanets: 2);
             VisitPlanets(numberOfPlanets: 2, name: "Dayna");
 
             NamePets("Laika", "Albert");
             NamePets("Mango", "Puddy", "Bucket");
             NamePets();
+
+            Console.WriteLine(DecoratePlanet("Jupiter"));
+
+            string ageAsString = "102";
+            string nameAsString = "Granny";
+            int ageAsInt;
+            int nameAsInt;
+            bool outcome = Int32.TryParse(ageAsString, out ageAsInt);
+            Console.WriteLine(outcome);
+            Console.WriteLine(ageAsInt);
+            bool outcome2 = Int32.TryParse(nameAsString, out nameAsInt);
+            Console.WriteLine(outcome2);
+            Console.WriteLine(nameAsInt);
+
+            bool marker;
+            Console.WriteLine(Whisper("HELLO AGAIN", out marker));
+
+            
 
         }
 
@@ -296,7 +312,15 @@ namespace csharp
           Console.WriteLine("Aw, you have no spacefaring pets");
         }
 
+        static string DecoratePlanet(string name)
+        {
+          return $"*.*.* Welcome to {name} *.*.*";
+        }
 
-
+        static string Whisper(string phrase, out bool wasWhispered)
+        {
+          wasWhispered = true;
+          return phrase.ToLower();
+        }
     }
 }
